@@ -1,0 +1,37 @@
+html,body{
+    background-color: rgb(34,34,34);
+	text-align: center;
+	height: 100%;
+	overflow: hidden;
+}
+
+.svg-wrapper{
+	position:relative;
+	width: 400px;
+	margin:0 auto;
+	top:50%;
+
+}
+.shape{
+	stroke-dashoffset:-590;
+	fill:transparent;
+    stroke:#ccff66;
+    border-bottom:5px solid black;
+    transition:stroke-width 1s,stroke-dashoffset 1s,stroke-dasharray 1s;
+}
+
+.text{
+	color:#fff;
+	font-family:"Oswald";
+	font-size:24px;
+	line-height: 32px;
+	letter-spacing: 8px;
+	top:-48px;
+	position: relative;
+}
+
+.svg-wrapper:hover .shape{
+	stroke-width:2px;
+	stroke-dashoffset:0;
+	stroke-dasharray:960;
+}

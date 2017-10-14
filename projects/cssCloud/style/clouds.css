@@ -1,0 +1,116 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.clouds{
+   position: fixed;
+   left:0;
+   top:0;
+   bottom:0;
+   right:0;
+   background: #1dc9d7;;
+}
+
+.cloud{
+	width: 22.5em;
+	height:7.5em;
+	background: #f2f9fe;
+	-moz-border-radius:6.25em;
+	-wekit-border-radius:6.25em;
+	border-radius:6.25em;
+	position: relative;
+	margin:7.5em auto 1.25em;
+}
+.cloud:after,.cloud:before{
+	content:"";
+	position: absolute;
+	background:#f2f9fe;
+	z-index:-1;
+    border-radius:50%;
+
+}
+.cloud:after{
+	width:7.5em;
+	height:7.5em;
+	top:-3.123em;
+	left:3.125em;
+}
+.cloud:before{
+	width:11.25em;
+	height:11.25em;
+	top:-5.625em;
+	right: 3.125em;
+}
+.cloud.s1{
+	-moz-transform:scale(0.9,0.9);
+	-ms-transfomr:scale(0.9,0.9);
+	-webkit-transfomr:scale(0.9,0.9);
+	transfomr:scale(0.9,0.9);
+	-webkit-animation:movesClouds 30s linear infinite;
+	-moz-animation:movesClouds 30s linear infinite;
+    -o-animation:movesClouds 30s linear infinite;
+}
+.cloud.s2{
+	left:12.5em;
+	-moz-transform:scale(0.7,0.7);
+	-ms-transform:scale(0.7,0.7);
+	-webkit-transform:scale(0.7,0.7);
+	-webkit-animation:movesClouds 50s linear infinite;
+	-moz-animation:movesClouds 50s linear infinite;
+    -o-animation:movesClouds 50s linear infinite;
+}
+.cloud.s3{
+	left:-15.62em;
+	top:-12.5em;
+	-moz-transform:scale(0.4,0.4);
+	-ms-transform:scale(0.4,0.4);
+	-webkit-transform:scale(0.4,0.4);
+	-webkit-animation:movesClouds 40s linear infinite;
+	-moz-animation:movesClouds 40s linear infinite;
+    -o-animation:movesClouds 40s linear infinite;
+}
+.cloud.s4{
+	left:29.375em;
+	top:-35.65em;
+	-moz-transform:scale(0.5,0.5);
+	-ms-transform:scale(0.5,0.5);
+	-webkit-transform:scale(0.5,0.5);
+	-webkit-animation:movesClouds 36s linear infinite;
+	-moz-animation:movesClouds 36s linear infinite;
+    -o-animation:movesClouds 36s linear infinite;
+}
+.cloud.s5{
+	left:-38em;
+	top:-38em;
+	-moz-transform:scale(0.3,0.3);
+	-ms-transform:scale(0.3,0.3);
+	-webkit-transform:scale(0.3,0.3);
+	-webkit-animation:movesClouds 44s linear infinite;
+	-moz-animation:movesClouds 44s linear infinite;
+    -o-animation:movesClouds 44s linear infinite;
+}
+@-webkit-keyframes movesClouds{
+    from{
+    	margin-left:125em;
+    }
+    to{
+    	margin-left:-125em;
+    }
+}
+
+@-moz-keyframes movesClouds{
+    from{
+    	margin-left:125em;
+    }
+    to{
+    	margin-left:-125em;
+    }
+}
+@-o-keyframes movesClouds{
+	0%{
+    	margin-left:125em;
+    }
+    100%{
+    	margin-left:-125em;
+    }
+}
